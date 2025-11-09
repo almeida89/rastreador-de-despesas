@@ -167,7 +167,7 @@ export default function Home() {
             </div>
 
             {/* Input: Valor */}
-            <div className="w-full md:w-1-3">
+            <div className="w-full md:w-1/3">
               <label htmlFor="amount" className="block text-sm font-medium text-gray-300 mb-1">
                 Valor (R$)
               </label>
