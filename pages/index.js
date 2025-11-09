@@ -153,7 +153,7 @@ export default function Home() {
         <form onSubmit={handleSubmit} className="bg-gray-800 p-6 rounded-lg shadow-md mb-8">
           <div className="flex flex-col md:flex-row gap-4">
             {/* Input: Descrição */}
-            <div className="w-full md:flex-1">
+            <div className="w-full md:flex-1 md:min-w-0">
               <label htmlFor="description" className="block text-sm font-medium text-gray-300 mb-1">
                 Descrição
               </label>
