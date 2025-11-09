@@ -166,8 +166,8 @@ export default function Home() {
                 className="w-full px-3 py-2 bg-gray-700 rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" />
             </div>
 
-            {/* Input: Valor */}
-            <div className="w-full md:w-1/3">
+            {/* Input: Valor  - Corrigido*/}
+            <div className="w-full md:w-1/3"> 
               <label htmlFor="amount" className="block text-sm font-medium text-gray-300 mb-1">
                 Valor (R$)
               </label>
