@@ -33,7 +33,7 @@ export default function Home() {
 
       if (!response.ok) {
         // Se a resposta não for 200 (OK), joga um erro.
-        throw new Error('Falha ao buscra despesas.');
+        throw new Error('Falha ao buscar despesas.');
       }
 
       const data = await response.json();
@@ -60,7 +60,7 @@ export default function Home() {
 
     // Validação simples no frontend
     if (!description || !amount) {
-      alert('Por favor, preenchar a descrição e o valor.');
+      alert('Por favor, preencher a descrição e o valor.');
       return;
     }
 
@@ -237,7 +237,7 @@ export default function Home() {
                   <button
                     onClick={() => handleDelete(expense.id)}
                     disabled={isLoading}
-                    className="px-3 py-1 bg-red-600 text-white text-sm rounded-md hover:bg-red-700 focus:online-none focus:ring-2 focus:ring-red-500 disabled:opacity-50">
+                    className="px-3 py-1 bg-red-600 text-white text-sm rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 disabled:opacity-50">
                     X
                   </button>
                 </div>
