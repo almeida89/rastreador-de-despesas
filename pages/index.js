@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 // 'Head' nos permite adicionar coisas ao <head> do HTML, como o título.
-import Head from 'nex/head';
+import Head from 'next/head';
 
 export default function Home() {
   // ------------------------------------------

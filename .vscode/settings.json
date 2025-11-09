@@ -1,0 +1,13 @@
+{
+  // "Silencia" o validador de CSS padrão do VS Code.
+  // A extensão Tailwind IntelliSense ainda funcionará.
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+
+  // Ajuda a extensão do Tailwind a encontrar
+  // classes em arquivos .mjs
+  "tailwindCSS.includeLanguages": {
+    "mjs": "javascript"
+  }
+}

@@ -1,12 +1,11 @@
-/* Importa as diretivas base do Tailwind */
+/* Esta é a sintaxe CORRETA para o Tailwind v3 */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definimos estilos globais simples */
 @layer base {
   body {
-    /* Um fundo escuro e texto claro para um visual "moderno" */
+    /* Isto agora vai funcionar */
     @apply bg-gray-900 text-gray-100;
   }
 }

@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // Isso diz ao Tailwind para 'observar' todos os arquivos .js, .ts, .jsx, e .tsx
-  // dentro das pastas 'pages' e 'components' (se você a tivesse).
-  // É assim que ele sabe quais classes de utilitário incluir no CSS final.
+  // ESTA é a parte crucial que estava faltando:
   content: [
+    // Diz ao Tailwind para escanear todos os arquivos .js/.jsx/.ts/.tsx
+    // dentro da pasta 'pages'
     './pages/**/*.{js,ts,jsx,tsx}',
+
+    // Faremos o mesmo para a pasta 'components', caso você a crie no futuro
     './components/**/*.{js,ts,jsx,tsx}',
-    // Se você usa o App Router (não usamos aqui), você adicionaria './app/**/...'
   ],
   theme: {
     extend: {},

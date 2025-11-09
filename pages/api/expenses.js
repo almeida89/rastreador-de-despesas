@@ -52,7 +52,7 @@ export default async function handler(req, res) {
             // 'ORDER BY created_at DESC' lista as mais recentes primeiro.
             const { rows } = await sql`
                 SELECT * FROM expenses
-                ORDER BY creste_at DESC;
+                ORDER BY created_at DESC;
             `;
 
             // Respondemos com status 200 (OK) e a lista de despesa (rows).
